@@ -24,7 +24,16 @@ signupform.addEventListener("submit",(event)=>{
   event.preventDefault();
 })
 
+let loginform=document.getElementById('loginform')
+// console.log(loginform)
+loginform.addEventListener("submit",(event)=>{
+  // console.log(event)
+  let loginemail=event.target.loginemail.value;
+  let loginpass=event.target.loginpass.value;
+  // console.log(loginemail,loginpass)
 
+  event.preventDefault();
+})
 
 
 
@@ -82,43 +91,9 @@ signupform.addEventListener("submit",(event)=>{
 
 
 
-//   let UserDetails=JSON.parse(localStorage.getItem("userdata"))||[]
-//   UserDetails.push({
-//        'name':name,
-//        'phone':phone,
-//        'email':email,
-//        'password':pass
-//   })
-// console.log(UserDetails)
 
-//   localStorage.setItem("userdata",JSON.stringify(UserDetails))
-  // event.target.reset()
-//    console.log(name,phone,email,pass);
-  
-//    event.preventDefault();
 
-// })
 
-
-
-
-// let loginform=document.getElementById("loginform")
-// if(loginform){
-
-//   loginform.addEventListener("submit",(event)=>{
-//     let loginemail=document.getElementById("loginemail").value
-//     let loginpass=document.getElementById("loginpass").value
-
-//     let UserDetails=JSON.parse(localStorage.getItem("userdata"))||[]
-//     console.log(UserDetails);
-    
-
-  
-//     event.target.reset();
-//     event.preventDefault();
-//   })
-// }
-   
         
     
 
